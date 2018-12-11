@@ -12,6 +12,7 @@ def roi(frame):
   frame = frame[upper_left[1] : bottom_right[1], upper_left[0] : bottom_right[0]]
   return frame
 
+
 def frame2thresh(frame):
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
   blurred = cv2.GaussianBlur(gray, (11, 11), 0)
@@ -20,6 +21,7 @@ def frame2thresh(frame):
   thresh = cv2.dilate(mask, None, iterations=3)
   
   return thresh
+
 
 def red_segment(frame): 
     # HSV values for red
@@ -39,6 +41,7 @@ def red_segment(frame):
     
     return red_seg
 
+
 def blue_segment(frame): 
     
     # convert to hsv color space
@@ -54,6 +57,7 @@ def blue_segment(frame):
     blue_segment = cv2.dilate(mask, None, iterations=3)
     
     return blue_segment
+
 
 def green_segment(frame):
     

@@ -32,7 +32,7 @@ for c in cnts[:4]:
     count+=1
 
 print(location)
-cv2.imshow("original", img)
+#cv2.imshow("original", img)
 cv2.imshow("red", red)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
