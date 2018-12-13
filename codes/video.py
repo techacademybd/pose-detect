@@ -6,6 +6,7 @@ from helper import red_segment, green_segment, blue_segment
 # pip install imutils
 # pip install opencv-python
 
+
 # load the video
 # script and video should be in same folder
 cap = cv2.VideoCapture("demo.mp4")
